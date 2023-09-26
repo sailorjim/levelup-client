@@ -7,8 +7,8 @@ export const Register = () => {
     const firstName = useRef()
     const lastName = useRef()
     const username = useRef()
-    const bio = useRef()
     const password = useRef()
+    const bio = useRef()
     const verifyPassword = useRef()
     const passwordDialog = useRef()
     const navigate = useNavigate()
@@ -53,23 +53,23 @@ export const Register = () => {
                 </fieldset>
                 <fieldset>
                     <label htmlFor="lastName"> Last Name </label>
-                    <input ref={lastName} type="text" name="lastName" className="form-control" placeholder="Last name" required />
+                    <input ref={lastName} type="text" name="lastName"  placeholder="Last name" required className="form-control"/>
                 </fieldset>
                 <fieldset>
                     <label htmlFor="inputUsername">Username</label>
-                    <input ref={username} type="text" name="username" className="form-control" placeholder="Username" required />
+                    <input ref={username} type="text" name="username"  placeholder="Username" required className="form-control"/>
                 </fieldset>
                 <fieldset>
                     <label htmlFor="inputPassword"> Password </label>
-                    <input ref={password} type="password" name="password" className="form-control" placeholder="Password" required />
+                    <input ref={password} type="password" name="password"  placeholder="Password" required className="form-control"/>
                 </fieldset>
                 <fieldset>
                     <label htmlFor="verifyPassword"> Verify Password </label>
-                    <input ref={verifyPassword} type="password" name="verifyPassword" className="form-control" placeholder="Verify password" required />
+                    <input ref={verifyPassword} type="password" name="verifyPassword"  placeholder="Verify password" required className="form-control"/>
                 </fieldset>
                 <fieldset>
                     <label htmlFor="verifyPassword"> Verify Password </label>
-                    <textarea ref={bio} name="bio" className="form-control" placeholder="Let other gamers know a little bit about you..." />
+                    <textarea ref={bio} name="bio"  placeholder="Let other gamers know a little bit about you..." className="form-control"/>
                 </fieldset>
                 <fieldset style={{
                     textAlign: "center"
