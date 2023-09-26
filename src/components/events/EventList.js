@@ -23,7 +23,7 @@ export const EventList = () => {
     getAllGames().then((res) => setGames(res));
   }, []);
   const filterEventsByGame = (game) => {
-    fetch(`http://localhost:8000/events?game=${game}`, {
+    fetch(`https://levelup-server-3e8eea3dff27.herokuapp.com/events?game=${game}`, {
       headers: {
         Authorization: `Token ${getToken()}`,
       },

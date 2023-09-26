@@ -1,7 +1,7 @@
 import { getToken } from "../utils/getToken"
 
 export const getAllGames = () => {
-    return fetch("http://localhost:8000/games", {
+    return fetch("https://levelup-server-3e8eea3dff27.herokuapp.com/games", {
       headers: {
         Authorization: `Token ${getToken()}`
       }
@@ -10,7 +10,7 @@ export const getAllGames = () => {
   }
 
   export const createGame = (game) => {
-    return fetch("http://localhost:8000/games", {
+    return fetch("https://levelup-server-3e8eea3dff27.herokuapp.com/games", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -21,7 +21,7 @@ export const getAllGames = () => {
       .then(res => res.json())
   }
   export const getGameById = (id) => {
-    return fetch(`http://localhost:8000/games/${id}`, {
+    return fetch(`https://levelup-server-3e8eea3dff27.herokuapp.com/games/${id}`, {
       headers: {
         Authorization: `Token ${getToken()}`
       }
@@ -29,7 +29,7 @@ export const getAllGames = () => {
       .then(res => res.json())
   }
 export const getGameTypes = () => {
-  return fetch("http://localhost:8000/gametypes", {
+  return fetch("https://levelup-server-3e8eea3dff27.herokuapp.com/gametypes", {
     headers: {
       Authorization: `Token ${getToken()}`
     }
@@ -37,7 +37,7 @@ export const getGameTypes = () => {
     .then(res => res.json())
 }
 export const getAllGametypes = () => {
-  return fetch("http://localhost:8000/gametypes", {
+  return fetch("https://levelup-server-3e8eea3dff27.herokuapp.com/gametypes", {
     headers: {
       Authorization: `Token ${getToken()}`
     }
@@ -45,7 +45,7 @@ export const getAllGametypes = () => {
     .then(res => res.json())
 }
 export const updateGame = (updatedGame, gameId) => {
-  return fetch(`http://localhost:8000/games/${gameId}`, {
+  return fetch(`https://levelup-server-3e8eea3dff27.herokuapp.com/games/${gameId}`, {
     method: "PUT",
     headers: {
       "Content-Type": "application/json",
@@ -62,7 +62,7 @@ export const updateGame = (updatedGame, gameId) => {
   .catch(error => console.log(error));
 };
 export const deleteGame = (id) => {
-  return fetch(`http://localhost:8000/games/${id}`, {
+  return fetch(`https://levelup-server-3e8eea3dff27.herokuapp.com/games/${id}`, {
     method: "DELETE",
     headers: {
       Authorization: `Token ${getToken()}`

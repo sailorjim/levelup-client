@@ -1,7 +1,7 @@
 import { getToken } from "../utils/getToken"
 
 export const getAllEvents = () => {
-    return fetch("http://localhost:8000/events", {
+    return fetch("https://levelup-server-3e8eea3dff27.herokuapp.com/events", {
       headers: {
         Authorization: `Token ${getToken()}`
       }
@@ -10,7 +10,7 @@ export const getAllEvents = () => {
   }
 
   export const getEventById = (id) => {
-    return fetch(`http://localhost:8000/events/${id}`, {
+    return fetch(`https://levelup-server-3e8eea3dff27.herokuapp.com/events/${id}`, {
       headers: {
         Authorization: `Token ${getToken()}`
       }
@@ -19,7 +19,7 @@ export const getAllEvents = () => {
   }
 
   export const createEvent = (event) => {
-    return fetch("http://localhost:8000/events", {
+    return fetch("https://levelup-server-3e8eea3dff27.herokuapp.com/events", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -30,7 +30,7 @@ export const getAllEvents = () => {
       .then(res => res.json())
   }
   export const updateEvent = (updatedEvent, eventId) => {
-    return fetch(`http://localhost:8000/events/${eventId}`, {
+    return fetch(`https://levelup-server-3e8eea3dff27.herokuapp.com/events/${eventId}`, {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",
@@ -47,7 +47,7 @@ export const getAllEvents = () => {
     .catch(error => console.log(error));
   };
   export const deleteEvent = (id) => {
-    return fetch(`http://localhost:8000/events/${id}`, {
+    return fetch(`https://levelup-server-3e8eea3dff27.herokuapp.com/events/${id}`, {
       method: "DELETE",
       headers: {
         Authorization: `Token ${getToken()}`
@@ -56,7 +56,7 @@ export const getAllEvents = () => {
     )
   }
   export const leaveEvent = (eventId) => {
-    return fetch(`http://localhost:8000/events/${eventId}/leave`, {
+    return fetch(`https://levelup-server-3e8eea3dff27.herokuapp.com/events/${eventId}/leave`, {
       method: "DELETE",
       headers: {
         Authorization: `Token ${getToken()}`
@@ -65,7 +65,7 @@ export const getAllEvents = () => {
     )
   }
   export const joinEvent = (eventId) => {
-    return fetch(`http://localhost:8000/events/${eventId}/signup`, {
+    return fetch(`https://levelup-server-3e8eea3dff27.herokuapp.com/events/${eventId}/signup`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
