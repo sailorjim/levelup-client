@@ -36,25 +36,17 @@ export const Login = () => {
             </dialog>
             <section>
                 <form className="form--login" onSubmit={handleLogin}>
-                    <h1>Level Up</h1>
-                    <h2>Please sign in</h2>
-                    <fieldset>
-                        <label htmlFor="inputUsername"> Username address </label>
-                        <input ref={username} type="username" id="username" className="form-control" placeholder="Username address" required autoFocus />
-                    </fieldset>
-                    <fieldset>
-                        <label htmlFor="inputPassword"> Password </label>
-                        <input ref={password} type="password" id="password" className="form-control" placeholder="Password" required />
-                    </fieldset>
-                    <fieldset style={{
-                        textAlign: "center"
-                    }}>
-                        <button className="btn btn-1 btn-sep icon-send" type="submit">Sign In</button>
-                    </fieldset>
+                    <img className="logo-wordmark" src="/logo.svg" />
+                    <h2>Schedule your next gaming event</h2>
+
+                    <input ref={username} type="username" placeholder="Username" id="username" className="form-control" required autoFocus />
+                    <input ref={password} type="password" id="password" placeholder="Password" className="form-control"  required />
+
+                    <button className="btn btn-1 btn-sep icon-send" type="submit">Sign In</button>
                 </form>
             </section>
             <section className="link--register">
-                <Link to="/register">Not a member yet?</Link>
+                <Link to="/register">Create an account</Link>
             </section>
         </main>
     )

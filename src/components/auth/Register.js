@@ -47,35 +47,26 @@ export const Register = () => {
 
             <form className="form--login" onSubmit={handleRegister}>
                 <h1 className="h3 mb-3 font-weight-normal">Register an account</h1>
-                <fieldset>
-                    <label htmlFor="firstName"> First Name </label>
-                    <input ref={firstName} type="text" name="firstName" className="form-control" placeholder="First name" required autoFocus />
-                </fieldset>
-                <fieldset>
-                    <label htmlFor="lastName"> Last Name </label>
-                    <input ref={lastName} type="text" name="lastName" className="form-control" placeholder="Last name" required />
-                </fieldset>
-                <fieldset>
-                    <label htmlFor="inputUsername">Username</label>
-                    <input ref={username} type="text" name="username" className="form-control" placeholder="Username" required />
-                </fieldset>
-                <fieldset>
-                    <label htmlFor="inputPassword"> Password </label>
-                    <input ref={password} type="password" name="password" className="form-control" placeholder="Password" required />
-                </fieldset>
-                <fieldset>
-                    <label htmlFor="verifyPassword"> Verify Password </label>
-                    <input ref={verifyPassword} type="password" name="verifyPassword" className="form-control" placeholder="Verify password" required />
-                </fieldset>
-                <fieldset>
-                    <label htmlFor="verifyPassword"> Verify Password </label>
-                    <textarea ref={bio} name="bio" className="form-control" placeholder="Let other gamers know a little bit about you..." />
-                </fieldset>
-                <fieldset style={{
-                    textAlign: "center"
-                }}>
-                    <button className="btn btn-1 btn-sep icon-send" type="submit">Register</button>
-                </fieldset>
+
+                <label htmlFor="firstName"> First Name </label>
+                <input ref={firstName} type="text" name="firstName" className="form-control" placeholder="First name" required autoFocus />
+
+                <label htmlFor="lastName"> Last Name </label>
+                <input ref={lastName} type="text" name="lastName" className="form-control" placeholder="Last name" required />
+
+                <label htmlFor="inputUsername">Username</label>
+                <input ref={username} type="text" name="username" className="form-control" placeholder="Username" required />
+
+                <label htmlFor="inputPassword"> Password </label>
+                <input ref={password} type="password" name="password" className="form-control" placeholder="Password" required />
+
+                <label htmlFor="verifyPassword"> Verify Password </label>
+                <input ref={verifyPassword} type="password" name="verifyPassword" className="form-control" placeholder="Verify password" required />
+
+                <label htmlFor="verifyPassword"> Verify Password </label>
+                <textarea ref={bio} name="bio" className="form-control" placeholder="Let other gamers know a little bit about you..." />
+
+                <button className="btn btn-1 btn-sep icon-send" type="submit">Register</button>
             </form>
             <section className="link--register">
                 Already registered? <Link to="/login">Login</Link>
