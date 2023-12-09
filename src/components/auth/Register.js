@@ -69,7 +69,7 @@ export const Register = () => {
                 <button className="btn btn-1 btn-sep icon-send" type="submit">Register</button>
             </form>
             <section className="link--register">
-                Already registered? <Link to="/login">Login</Link>
+                Already registered? <Link to="/">Login</Link>
             </section>
         </main>
     )

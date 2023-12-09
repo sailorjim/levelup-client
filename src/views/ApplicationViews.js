@@ -7,11 +7,11 @@ import { Authorized } from "./Authorized"
 export const ApplicationViews = () => {
     return <>
         <Routes>
-            <Route path="/login" element={<Login />} />
             <Route path="/register" element={<Register />} />
             <Route element={<Authorized />}>
                 {/* Add Routes here */}
             </Route>
+            <Route path="/" element={<Login />} />
         </Routes>
     </>
 }

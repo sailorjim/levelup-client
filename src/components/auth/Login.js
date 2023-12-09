@@ -36,7 +36,7 @@ export const Login = () => {
             </dialog>
             <section>
                 <form className="form--login" onSubmit={handleLogin}>
-                    <img className="logo-wordmark" src="/logo.svg" />
+                    <img className="logo-wordmark" src="/logo.svg" alt="level up logo"/>
                     <h2>Schedule your next gaming event</h2>
 
                     <input ref={username} type="username" placeholder="Username" id="username" className="form-control" required autoFocus />

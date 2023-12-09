@@ -1,6 +1,13 @@
-html {
-	background: radial-gradient(#101010 10%, #313D40);
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,700&display=swap');
+
+
+body {
+	background: radial-gradient(#101010 70%, #313D40);
+	height: 100vh;
+	margin: 0;
+	font-family: 'Bricolage Grotesque';
 }
+
 
 #root::after {
 	display: block;

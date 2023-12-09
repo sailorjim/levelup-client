@@ -20,7 +20,7 @@
     display: block;
     width: 43vw;
     margin: auto;
-    margin-top: 4em;
+    margin-top: 7em;
 }
 
 .form-control {
@@ -30,16 +30,24 @@
     width: 50%;
     margin: 0 auto 1em;
     padding: .375em .75em;
-
+    font-family: Bricolage Grotesque; 
     font-weight: 400;
     line-height: 1.5;
-    color: #495057;
+    color: white;
     background-color: transparent;
-    background-clip: padding-box;
+
     border: 1px solid #ced4da;
     border-radius: .25rem;
     transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
     text-align: center;
+}
+
+.form-control:autofill {
+    background: unset;
+}
+
+.form-control:focus {
+    outline: none;
 }
 
 .form--login h2 {
@@ -50,6 +58,7 @@
 
 .form--login button {
     display: block;
+    font-family: Bricolage Grotesque; 
     width: calc(50% + 1.5em);
     margin: auto;
     border-radius: .25rem;
@@ -62,7 +71,9 @@
     margin: 1.5em auto;
     font-weight: bold;
     cursor: pointer;
+
 }
+
 
 .container--login {
     text-align: center;
